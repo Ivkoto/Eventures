@@ -2,7 +2,33 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+<style>
+    hr {
+        height: 3px;
+        background-color: black;
+        border: none;
+        width: 100%
+    }
+</style>
+
+<div class="index-div border border-white" style="background-color: #AFEEEE">
+    <div class="index-div" style="text-align: left; background-color: #AFEEEE; margin: 5%">
+        <h4>Eventures - The best ticket service in the world </h4>
+
+        <hr />
+
+        <h5>
+            <a class="text-primay" asp-area="Identity" asp-page="/Account/Login" style="text-align: left">Login</a>
+            to start "eventing".
+            <br />
+            <br />
+            <a class="text-primay" asp-area="Identity" asp-page="/Account/Register" style="text-align: left">Register</a>
+            if you don't have an account.
+        </h5>
+    </div>
 </div>
