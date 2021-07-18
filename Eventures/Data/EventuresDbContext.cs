@@ -12,5 +12,7 @@ namespace Eventures.Data
         }
 
         public DbSet<Event> Events { get; set; }
+
+        public DbSet<City> Cities { get; set; }
     }
 }

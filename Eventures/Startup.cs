@@ -1,5 +1,6 @@
 using Eventures.Data;
 using Eventures.Infrastructure;
+using Eventures.Services.Events;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -22,12 +23,17 @@ namespace Eventures
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<EventuresDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
+            services
+                .AddDbContext<EventuresDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options =>
+            services
+                .AddDatabaseDeveloperPageExceptionFilter()
+                .AddScoped<IEventService, EventService>();
+
+
+            services
+                .AddDefaultIdentity<IdentityUser>(options =>
             {
                 /*options.SignIn.RequireConfirmedAccount = true*/
                 options.Password.RequireUppercase = false;

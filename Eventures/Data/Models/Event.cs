@@ -8,7 +8,7 @@ namespace Eventures.Data.Models
     public class Event
     {
         [Key]
-        public string Id { get; init; } = new Guid().ToString();
+        public string Id { get; init; } = Guid.NewGuid().ToString();
 
         [Required]
         [MaxLength(EventNameMaxLength)]
@@ -23,6 +23,10 @@ namespace Eventures.Data.Models
         public int TotalTickets { get; set; }
 
         public decimal PricePerTicket { get; set; }
+
+        public string CityId { get; set; }
+
+        public City City { get; set; }
 
     }
 }
