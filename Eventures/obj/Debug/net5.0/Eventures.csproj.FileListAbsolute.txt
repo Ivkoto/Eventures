@@ -475,3 +475,4 @@ C:\Users\ikost\source\repos\SoftUni_Web\Eventures\Eventures\obj\Debug\net5.0\Raz
 C:\Users\ikost\source\repos\SoftUni_Web\Eventures\Eventures\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\ikost\source\repos\SoftUni_Web\Eventures\Eventures\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ikost\source\repos\SoftUni_Web\Eventures\Eventures\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\ikost\source\repos\SoftUni_Web\Eventures\Eventures\obj\Debug\net5.0\Razor\Views\Events\Create.cshtml.g.cs
